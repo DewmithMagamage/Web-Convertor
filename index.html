@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Web Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="converter">
+            <div class="header">
+                <h1>Online Converter</h1>
+                <div class="mode-switch">
+                    <span class="mode-icon" id="sunIcon">&#9728;</span> <!-- Sun icon -->
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="mode-icon" id="moonIcon">&#9790;</span> <!-- Moon icon -->
+                </div>
+            </div>
+            
+
+            
+            <div id="converter-controls">
+                <label for="conversion-type">Conversion Type:</label>
+                <select id="conversion-type">
+                    <option value="currency">Currency</option>
+                    <option value="volume">Volume</option>
+                    <option value="length">Length</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="area">Area</option>
+                    <option value="speed">Speed</option>
+                    <option value="time">Time</option>
+                </select>
+<br>
+                <div id="input-fields">
+                    <input type="number" id="input-value" placeholder="Enter value" min="0">
+                    <select id="input-unit"></select>
+                    <span>to</span>
+                    <select id="output-unit"></select>
+                </div>
+<br>
+                <button id="convert-btn" class="btn">Convert</button>
+                <button id="swap-btn" class="btn">Swap</button>
+                <button id="reset-btn" class="btn">Reset</button>
+            </div>
+
+            <div id="result">
+                <h3>Result:</h3>
+                <p id="output-value"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
